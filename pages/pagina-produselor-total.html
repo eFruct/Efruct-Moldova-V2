@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link id="theme" rel="stylesheet" href="../css/light.css">
+    <link rel="stylesheet" href="../css/style-pagina-produse-total.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="../images/efruct-logo-simple-removebg-preview.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <title>EFruct Moldova</title>
+</head>
+
+<body>
+    <header id="header">
+        <img class="logo" src="../images/efruct-logo-simple-removebg-preview.png">
+        <navbar id="navbar">
+            <a class="meniu" href="../index.html" onclick="mobileMenuRefresh();">Acasă</a>
+            <a class="meniu" href="../index.html#sectiune-despre" onclick="mobileMenuRefresh();">Despre</a>
+            <a class="meniu" href="pagina-produselor-total.html" onclick="mobileMenuRefresh();">Produse</a>
+            <a class="meniu" href="contacte.html" onclick="mobileMenuRefresh();">Contacte</a>
+            <a class="meniu" href="../index.html#sectiune-faq" onclick="mobileMenuRefresh();">Întrebări</a>
+
+            <label class="schimba-tema">
+                <ion-icon class="meniu" name="moon-outline" id="buton-tema" onclick="toggleTheme()"></ion-icon>
+            </label>
+
+        </navbar>
+
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars">
+        </i>
+        <input placeholder="Căutare" id="bara_cautare" class="meniu" type="text">
+
+        <div class="div-bara-cautare" id="div-bara-cautare">
+          <ul class="bara_cautare">
+            <a href="produs1.html"><li  class="hide">Piersici Uscate #1</li></a>
+            <a href="produs2.html"><li  class="hide">Mere Uscate Tăiate</li></a>
+            <a href="produs3.html"><li  class="hide">Cimbrul</li></a>
+            <a href="produs4.html"><li  class="hide">Păducelul</li></a>
+            <a href="produs5.html"><li  class="hide">Vișine</li></a>
+            <a href="produs6.html"><li  class="hide">Măceșe</li></a>
+            <a href="produs7.html"><li  class="hide">Pere</li></a>
+            <a href="produs8.html"><li  class="hide">Mere Uscate</li></a>
+            <a href="produs9.html"><li  class="hide">Caise</li></a>
+            <a href="produs10.html"><li  class="hide">Cireșe</li></a>
+            <a href="produs11.html"><li  class="hide">Galbenă gutuie</li></a>
+            <a href="produs12.html"><li  class="hide">Prune Uscate Jumătăți</li></a>
+            <a href="produs13.html"><li  class="hide">Păducelul</li></a>
+            <a href="produs14.html"><li  class="hide">Vișine Uscate</li></a>
+            <a href="produs15.html"><li  class="hide">Dulceață de Prune</li></a>
+            <a href="produs16.html"><li  class="hide">Prune Uscate</li></a>
+            <a href="produs17.html"><li  class="hide">PERE USCATE</li></a>
+            <a href="produs18.html"><li  class="hide">Măceșe Uscate</li></a>
+            <a href="produs19.html"><li  class="hide">Piersici Uscate #2</li></a>
+            <a href="produs20.html"><li  class="hide">Mere Uscate Cuburi</li></a>
+            <a href="produs21.html"><li  class="hide">Pere Uscate Tăiate</li></a>
+            <a href="produs22.html"><li  class="hide">Chipsuri de Mere</li></a>
+            <a href="produs23.html"><li  class="hide">Ceai de Păducel</li></a>
+            <a href="produs24.html"><li  class="hide">Mere Uscate Rondele</li></a>
+            <a href="produs25.html"><li  class="hide">Fructe uscate</li></a>
+            <a href="produs26.html"><li  class="hide">Mix #1</li></a>
+            <a href="produs27.html"><li  class="hide">Mix #2</li></a>
+            <a href="produs28.html"><li  class="hide">Mix #3</li></a>
+          </ul>
+      </div>
+        
+        </div>
+    </header>
+
+    <main>
+
+        <label id="label-sortare" for="selectProdus">Sortează produsele:</label>
+<select id="selectProdus">
+  <option value="all">Toate produsele</option>
+  <option value="mere">Mere</option>
+  <option value="pere">Pere</option>
+  <option value="prune">Prune</option>
+  <option value="mix-uri">Mix-uri</option>
+  <option value="pomusoare">Pomusoare</option>
+  <option value="piersici">Piersici</option>
+  <option value="caise">Caise</option>
+  <option value="gutui">Gutui</option>
+  <option value="paducel">Paducel</option>
+  <option value="cimbru">Cimbru</option>
+</select>
+
+        <div class="container-card-produs-produse">
+  
+            <div class="card-produs produs piersici">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs1.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍑Piersici Uscate🍑</h2>
+                <p>Aromate🥰 🍑Piersici Uscate Jumătăți🍑 Un deliciu pentru cei ce apreciază alimentele sănătoase!</p>
+                <a href="produs1.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs2.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍎Mere Uscate Tăiate🍎</h2>
+                <p>🍎Mere Uscate Tăiate🍎 ✅Pot fi consumate direct sau pentru prepararea compoturilor. 📌Cojile de mere conțin acid ursolic, care crește masa mușchilor scheletici și a țesutului adipos brun.</p>
+                <a href="produs2.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs cimbru">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs3.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🌱Cimbrul 🌱</h2>
+                <p>🌱Cimbrul 🌱 📌Se folosește ca și condiment pentru a da savoare preparatelor alimentare. 📌Este și un adevărat antibiotic natural. O cana cu ceai de cimbru: 🎯CALMEAZĂ PROBLEMELE RESPIRATORII 🎯PREVINE INDIGESTIA 🎯SCADE TENSIUNEA ARTERIALĂ</p>
+                <a href="produs3.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs paducel">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs4.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Păducelul</h2>
+                <p>Păducelul-Una dintre cele mai eficiente plante din "farmacia naturii".</p>
+                <a href="produs4.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs5.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Vișine</h2>
+                <p>Vișine Uscate Fără Sâmburi</p>
+                <a href="produs5.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs6.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Măceșe</h2>
+                <p>Măceșe Uscate</p>
+                <a href="produs6.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs7.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Pere</h2>
+                <p>Pere Uscate Tăiate</p>
+                <a href="produs7.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs8.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Mere Uscate</h2>
+                <p>Mere Uscate Rondele Fără Coajă și Cameră Seminceră</p>
+                <a href="produs8.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs caise">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs9.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Caise</h2>
+                <p>Caise Uscate Jumătăți</p>
+                <a href="produs9.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs10.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Cireșe</h2>
+                <p>Cireșe Uscate Fără Sâmburi</p>
+                <a href="produs10.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs gutui">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs11.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Gutui</h2>
+                <p>…”Galbenă gutuie Dulce, amăruie…”</p>
+                <a href="produs11.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs prune">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs12.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Prune Uscate Jumătăți🙃</h2>
+                <p>Prune Uscate Jumătăți🙃 Perfecte pentru gustarile rapide în timpul zilei, cât și seara la o cană de ceai in sânul familiei 🥰</p>
+                <a href="produs12.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs13.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Păducelul</h2>
+                <p>Păducelul - cel mai bun prieten al inimii!❤️ P.S. Anume așa arată Păducelul pe care îl colectează EFruct pentru a fi uscat.</p>
+                <a href="produs13.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs14.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍒Vișine Uscate fără Sâmburi🍒</h2>
+                <p>Bucură-te de o aromă intensă cu gust dulce acrișor a 🍒Vișinelor Uscate fără Sâmburi🍒 Un produs Natural, perfect pentru gustări rapide și sănătoase!🥰 📌Fiecare vișină este plină de nutrienți și fibre, ajutând la menținerea sănătății corpului și a inimii tale.</p>
+                <a href="produs14.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs prune">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs15.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🔹Dulceață de Prune🔹</h2>
+                <p>🔹Dulceață de Prune🔹 O puteți servi cu pâine proaspătă, adăuga în tarte, checuri, terciuri și clătite.😋</p>
+                <a href="produs15.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs prune">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs16.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🔹Prune Uscate fără Sâmburi🔹</h2>
+                <p>🔹Prune Uscate fără Sâmburi🔹 ‼️ Fără fum, zahăr, conservanți, coloranți. 📌Asigură o digestie sănătoasă și detoxifică organismul!</p>
+                <a href="produs16.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs17.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍐PERE USCATE RONDELE</h2>
+                <p>Mult așteptate-le 🍐PERE USCATE RONDELE fără camera de semințe🍐 Dulci, aromate, dar FĂRĂ ZAHĂR 🥰 Alintă-ți papilele gustative!😉</p>
+                <a href="produs17.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs18.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Măceșe Uscate</h2>
+                <p>Cel mai frumos weekend este cel petrecut alături de oamenii dragi!🥰 Cu un ceai din Măceșe Uscate de la EFruct Moldova.😉</p>
+                <a href="produs18.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs piersici">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs19.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍑Piersici Uscate</h2>
+                <p>Doar noi îți oferim cele mai delicioase și aromate 🍑Piersici Uscate Jumătăți🍑 ‼️Fără zahăr adăugat.</p>
+                <a href="produs19.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs20.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍎Mere Uscate Cuburi</h2>
+                <p>🍎Mere Uscate Cuburi fără coajă și camera de semințe🍎 ✅CROCANTE- gustarea ideală pentru tine și familia ta! Comandă acum direct de la producător ⚜️EFruct Moldova⚜️</p>
+                <a href="produs20.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs21.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍐Pere Uscate Tăiate🍐</h2>
+                <p>🍐Pere Uscate Tăiate🍐 O gustare sănătoasă, delicioasă și o bună alternativă la dulciuri. Comandă acum direct de la producător ⚜️EFruct Moldova⚜️</p>
+                <a href="produs21.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs22.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍎Chipsuri de Mere🍎</h2>
+                <p>🍎Chipsuri de Mere🍎 CROCANTE- gustul delicios al merelor. O gustare perfectă pentru un stil de viață sănătos!🥰</p>
+                <a href="produs22.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs pomusoare">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs23.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Ceai de Păducel! ☕❄️</h2>
+                <p>Susține-ți imunitatea și bucură-te de iarnă cu Ceai de Păducel! ☕❄️ Înfruntă sezonul rece într-un mod delicios! 📌Ceaiul de Păducel nu doar îți încălzește sufletul, ci și susține sistemul tău imunitar. O combinație de gust rafinat și beneficii pentru sănătate în fiecare înghițitură.😉</p>
+                <a href="produs23.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mere">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs24.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🍎Mere Uscate Rondele</h2>
+                <p>Dulceața în formă pură! 🍎Mere Uscate Rondele fără coajă și camera de semințe🍎 Ideale pentru o gustare rapidă și sănătoasă!</p>
+                <a href="produs24.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mix-uri">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs25.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>🌿Fructe uscate</h2>
+                <p>🌿 Descoperă secretele gustului autentic a fructelor uscate de la EFruct Moldova. O alegere delicioasă și sănătoasă pentru o zi plină de energie pozitivă.😉</p>
+                <a href="produs25.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mix-uri">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs26.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Mix</h2>
+                <p>📌Adaugă fructele uscate în rutina ta zilnică și bucură-te de aceste delicii naturale ce îți oferă o bombă de vitamine în fiecare mușcătură. 😉</p>
+                <a href="produs26.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mix-uri">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs27.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Mix de fructe uscate 2</h2>
+                <p>Un mix de fructe uscate pentru momente dulci și pline de rafinament! Dăruiește un mărțișor sănătos!🎁Cadoul perfect pentru Mame, iubite, colege de birou și profesoare! ❤️🤍</p>
+                <a href="produs27.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+            <div class="card-produs produs mix-uri">
+              <div class="image-container-card-produs-produse">
+                <img src="../images/produs28.jpg" alt="Produs 1">
+              </div>
+              <div class="card-produs-content">
+                <h2>Mix de fructe uscate</h2>
+                <p>🎁Cadoul perfect pentru Mame, iubite, colege de birou și profesoare! Un mix de fructe uscate pentru momente dulci și pline de rafinament! Dăruiește un mărțișor sănătos!❤️🤍</p>
+                <a href="produs28.html#destinatie-centrat-pag-produs"><button class="button-pag-produse">Detalii</button></a>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+    </main>
+
+    <footer>
+      <div class="border"></div>
+      <div class="border-2"></div>
+        <span>
+
+            <a href="https://www.instagram.com/efructmoldova/?hl=en"><img class="retele"
+                    src="../images/inst.logo.png"></a>
+
+            <a href="https://www.facebook.com/efructmoldova"><img class="retele" src="../images/facebook.logo.png"></a>
+
+            <a href="tel:0602 32 777"><img class="retele" src="../images/viber.logo.png"></a>
+
+            <p>EFruct Moldova - Chișinău © 2024 Toate drepturile rezervate.</p>
+
+
+        </span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script-pagina-produse-total.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link id="theme" rel="stylesheet" href="../css/light.css">
+    <link rel="stylesheet" href="../css/style-pagina-produse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="../images/efruct-logo-simple-removebg-preview.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <title>EFruct Moldova</title>
+</head>
+
+<body>
+    <header id="header">
+        <img class="logo" src="../images/efruct-logo-simple-removebg-preview.png">
+        <navbar id="navbar">
+            <a class="meniu" href="../index.html" onclick="mobileMenuRefresh();">Acasă</a>
+            <a class="meniu" href="../index.html#sectiune-despre" onclick="mobileMenuRefresh();">Despre</a>
+            <a class="meniu" href="pagina-produselor-total.html" onclick="mobileMenuRefresh();">Produse</a>
+            <a class="meniu" href="../pages/contacte.html" onclick="mobileMenuRefresh();">Contacte</a>
+            <a class="meniu" href="../index.html#sectiune-faq" onclick="mobileMenuRefresh();">Întrebări</a>
+
+            <label class="schimba-tema">
+                <ion-icon class="meniu" name="moon-outline" id="buton-tema" onclick="toggleTheme()"></ion-icon>
+            </label>
+
+        </navbar>
+
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars">
+        </i>
+        <input placeholder="Căutare" id="bara_cautare" class="meniu" type="text">
+
+        <div class="div-bara-cautare" id="div-bara-cautare">
+            <ul class="bara_cautare">
+           <a href="produs1.html"><li  class="hide">Piersici Uscate</li></a>
+           <a href="produs2.html"><li  class="hide">Mere Uscate Tăiate</li></a>
+           <a href="produs3.html"><li  class="hide">Cimbrul</li></a>
+           <a href="produs4.html"><li  class="hide">Păducelul</li></a>
+           <a href="produs5.html"><li  class="hide">Vișine</li></a>
+           <a href="produs6.html"><li  class="hide">Măceșe</li></a>
+           <a href="produs7.html"><li  class="hide">Pere</li></a>
+           <a href="produs8.html"><li  class="hide">Mere Uscate</li></a>
+           <a href="produs9.html"><li  class="hide">Caise</li></a>
+           <a href="produs10.html"><li  class="hide">Cireșe</li></a>
+           <a href="produs11.html"><li  class="hide">Galbenă gutuie</li></a>
+           <a href="produs12.html"><li  class="hide">Prune Uscate Jumătăți</li></a>
+           <a href="produs13.html"><li  class="hide">Păducelul</li></a>
+           <a href="produs14.html"><li  class="hide">Vișine Uscate</li></a>
+           <a href="produs15.html"><li  class="hide">Dulceață de Prune</li></a>
+           <a href="produs16.html"><li  class="hide">Prune Uscate</li></a>
+           <a href="produs17.html"><li  class="hide">PERE USCATE</li></a>
+           <a href="produs18.html"><li  class="hide">Măceșe Uscate</li></a>
+           <a href="produs19.html"><li  class="hide">Piersici Uscate</li></a>
+           <a href="produs20.html"><li  class="hide">Mere Uscate Cuburi</li></a>
+           <a href="produs21.html"><li  class="hide">Pere Uscate Tăiate</li></a>
+           <a href="produs22.html"><li  class="hide">Chipsuri de Mere</li></a>
+           <a href="produs23.html"><li  class="hide">Ceai de Păducel</li></a>
+           <a href="produs24.html"><li  class="hide">Mere Uscate Rondele</li></a>
+           <a href="produs25.html"><li  class="hide">Fructe uscate</li></a>
+           <a href="produs26.html"><li  class="hide">Mix #1</li></a>
+           <a href="produs27.html"><li  class="hide">Mix #2</li></a>
+           <a href="produs28.html"><li  class="hide">Mix #3</li></a>
+            </ul>
+        </div>
+        
+        </div>
+    </header>
+
+    <main>
+        <div class="container-pag-produse">
+            <img src="../images/produs26.jpg"> 
+            <div class="overlay-pag-produse"></div> 
+
+            <div id="destinatie-centrat-pag-produs"></div>
+
+            <div class="content-pag-produse" id="content-pag-produse">
+              <h1>Mix</h1>
+              <p>📌Adaugă fructele uscate în rutina ta zilnică și bucură-te de aceste delicii naturale ce îți oferă o bombă de vitamine în fiecare mușcătură. 😉</p>
+              <a href="#" class="button-pag-produse">Cumpără</a> 
+            </div>
+          </div>
+    </main>
+
+    <footer>
+        <span>
+
+            <a href="https://www.instagram.com/efructmoldova/?hl=en"><img class="retele"
+                    src="../images/inst.logo.png"></a>
+
+            <a href="https://www.facebook.com/efructmoldova"><img class="retele" src="../images/facebook.logo.png"></a>
+
+            <a href="tel:0602 32 777"><img class="retele" src="../images/viber.logo.png"></a>
+
+            <p>EFruct Moldova - Chișinău © 2024 Toate drepturile rezervate.</p>
+
+
+        </span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script-pagina-produse.js"></script>
+    <script src="../js/script-contacte-produse.js"></script>
+</body>
+
+</html>

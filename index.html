@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="images/efruct-logo-simple-removebg-preview.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <title>EFruct Moldova</title>
+</head>
+
+<body>
+    <header id="header">
+       <a href="index.html"> <img class="logo" src="images/efruct-logo-simple-removebg-preview.png"></a>
+        <navbar id="navbar">
+            <a class="meniu" href="index.html" onclick="mobileMenuRefresh();">Acasă</a>
+            <a class="meniu" href="#sectiune-despre" onclick="mobileMenuRefresh();">Despre</a>
+            <a class="meniu" href="./pages/pagina-produselor-total.html" onclick="mobileMenuRefresh();">Produse</a>
+            <a class="meniu" href="pages/contacte.html" onclick="mobileMenuRefresh();">Contacte</a>
+            <a class="meniu" href="#sectiune-faq" onclick="mobileMenuRefresh();">Întrebări</a>
+
+            <label class="schimba-tema">
+                <ion-icon class="meniu" name="moon-outline" id="buton-tema" onclick="toggleTheme()"></ion-icon>
+            </label>
+
+        </navbar>
+
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars">
+        </i>
+        <input placeholder="Căutare" id="bara_cautare" class="meniu" type="text">
+
+        <div class="div-bara-cautare" id="div-bara-cautare">
+            <ul class="bara_cautare">
+                <a href="./pages/produs1.html#destinatie-centrat-pag-produs"><li  class="hide">Piersici Uscate #1</li></a>
+                <a href="./pages/produs2.html#destinatie-centrat-pag-produs"><li  class="hide">Mere Uscate Tăiate</li></a>
+                <a href="./pages/produs3.html#destinatie-centrat-pag-produs"><li  class="hide">Cimbrul</li></a>
+                <a href="./pages/produs4.html#destinatie-centrat-pag-produs"><li  class="hide">Păducelul</li></a>
+                <a href="./pages/produs5.html#destinatie-centrat-pag-produs"><li  class="hide">Vișine</li></a>
+                <a href="./pages/produs6.html#destinatie-centrat-pag-produs"><li  class="hide">Măceșe</li></a>
+                <a href="./pages/produs7.html#destinatie-centrat-pag-produs"><li  class="hide">Pere</li></a>
+                <a href="./pages/produs8.html#destinatie-centrat-pag-produs"><li  class="hide">Mere Uscate</li></a>
+                <a href="./pages/produs9.html#destinatie-centrat-pag-produs"><li  class="hide">Caise</li></a>
+                <a href="./pages/produs10.html#destinatie-centrat-pag-produs"><li  class="hide">Cireșe</li></a>
+                <a href="./pages/produs11.html#destinatie-centrat-pag-produs"><li  class="hide">Galbenă gutuie</li></a>
+                <a href="./pages/produs12.html#destinatie-centrat-pag-produs"><li  class="hide">Prune Uscate Jumătăți</li></a>
+                <a href="./pages/produs13.html#destinatie-centrat-pag-produs"><li  class="hide">Păducelul</li></a>
+                <a href="./pages/produs14.html#destinatie-centrat-pag-produs"><li  class="hide">Vișine Uscate</li></a>
+                <a href="./pages/produs15.html#destinatie-centrat-pag-produs"><li  class="hide">Dulceață de Prune</li></a>
+                <a href="./pages/produs16.html#destinatie-centrat-pag-produs"><li  class="hide">Prune Uscate</li></a>
+                <a href="./pages/produs17.html#destinatie-centrat-pag-produs"><li  class="hide">PERE USCATE</li></a>
+                <a href="./pages/produs18.html#destinatie-centrat-pag-produs"><li  class="hide">Măceșe Uscate</li></a>
+                <a href="./pages/produs19.html#destinatie-centrat-pag-produs"><li  class="hide">Piersici Uscate #2</li></a>
+                <a href="./pages/produs20.html#destinatie-centrat-pag-produs"><li  class="hide">Mere Uscate Cuburi</li></a>
+                <a href="./pages/produs21.html#destinatie-centrat-pag-produs"><li  class="hide">Pere Uscate Tăiate</li></a>
+                <a href="./pages/produs22.html#destinatie-centrat-pag-produs"><li  class="hide">Chipsuri de Mere</li></a>
+                <a href="./pages/produs23.html#destinatie-centrat-pag-produs"><li  class="hide">Ceai de Păducel</li></a>
+                <a href="./pages/produs24.html#destinatie-centrat-pag-produs"><li  class="hide">Mere Uscate Rondele</li></a>
+                <a href="./pages/produs25.html#destinatie-centrat-pag-produs"><li  class="hide">Fructe uscate</li></a>
+                <a href="./pages/produs26.html#destinatie-centrat-pag-produs"><li  class="hide">Mix #1</li></a>
+                <a href="./pages/produs27.html#destinatie-centrat-pag-produs"><li  class="hide">Mix #2</li></a>
+                <a href="./pages/produs28.html#destinatie-centrat-pag-produs"><li  class="hide">Mix #3</li></a>
+            </ul>
+        </div>
+        
+        </div>
+    </header>
+
+    <main>
+        <a href="versiune site simplificat/index.html" id="specialLink" style="display: none;">Conexiune slabă? Vezi versiunea simplificată a site-ului web</a>
+        <section id="index">
+            <div class="index-info">
+
+                <div class="intro-content">
+                    <h1>EFruct</h1>
+                    <h4>FRUCTE USCATE 100% NATURALE</h4>
+
+                   
+                </div>
+
+                <div class="custom-shape-divider-bottom-1683301408">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                            opacity=".25" class="shape-fill"></path>
+                        <path
+                            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                            opacity=".5" class="shape-fill"></path>
+                        <path
+                            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="sectiune-despre">
+            <div id="titlu-and-border-section-despre">
+                <h1 class="titlu-sectiune-sau-pagina">Despre noi</h1>
+                <div class="border"></div>
+                <div class="border-2"></div>
+            </div>
+            <p class="p-despre">Intreprinderea noastră se specializează în producția și comercializarea de fructe uscate 100% naturale, fără adaosuri de zahăr, conservanți, coloranți sau aromatizatori. <br>✔Fabricate în Republica Moldova, produsele noastre sunt rezultatul unei atente selecții a celor mai proaspete și calitative fructe, care sunt apoi uscate în mod natural pentru a păstra aroma și nutrienții lor. <br> ✔Ne dedicăm sănătății și bunăstării clienților noștri, oferindu-le produse autentice, sănătoase și delicioase, care să aducă o bucurie gustativă inegalabilă.</p>
+
+            <div class="slider">
+                <!-- list Items -->
+                <div class="list">
+                    <div class="item active">
+                        <img src="images/img1.png">
+                        <div class="content">
+                            <p class="p-slider">Efruct</p>
+                            <h2 class="h2-slider">Învingător al Concursului Notorium</h2>
+                            <p class="p-slider">
+                                Trofeul obținut în cadrul Concursului Mărcilor Recunoscute Notorium reprezintă un simbol al excelenței și al recunoașterii în industria fructelor uscate. Acest trofeu poate fi considerat o dovadă tangibilă a angajamentului și dedicării intreprinderii față de calitatea și inovația produselor noastre.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img2.png">
+                        <div class="content">
+                            <p class="p-slider">Efruct</p>
+                            <h2 class="h2-slider">Calitate superioară</h2>
+                            <p class="p-slider">
+                                Intreprinderea noastră de fructe uscate se poate mandri cu calitatea superioară a produselor sale, demonstrată prin câștigarea titlului de învingător al Concursului Mărcilor Recunoscute Notorium. Această recunoaștere atestă angajamentul nostru față de calitate și excelență în producție.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img3.png">
+                        <div class="content">
+                            <p class="p-slider">Efruct</p>
+                            <h2 class="h2-slider">Autenticitate</h2>
+                            <p class="p-slider">
+                                Produsele sunt 100% naturale, fără adăugarea de zahăr, conservanți, coloranți sau aromatizatori. Această trasatură subliniază angajamentul nostru față de sănătatea consumatorilor și oferă un plus de încredere în autenticitatea și puritatea produselor noastre.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img4.png">
+                        <div class="content">
+                            <p class="p-slider">Efruct</p>
+                            <h2 class="h2-slider">Longevitate și experiență</h2>
+                            <p class="p-slider">
+                                Fondată în 2007, intreprinderea noastră de fructe uscate are o istorie solidă și o experiență considerabilă în industrie. Această longevitate și experiență pot fi văzute ca un indicator al stabilității și fiabilității lor în vinderea produselor de calitate și satisfacerea nevoilor clienților de-a lungul timpului.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img2.png">
+                        <div class="content">
+                            <p class="p-slider">Efruct</p>
+                            <h2 class="h2-slider">Excelență în producție</h2>
+                            <p class="p-slider">
+                                Cu mândrie, ne putem lăuda cu calitatea superioară a produselor noastre, confirmată prin câștigarea titlului de învingător al concursului menționat anterior. Această distincție atestă nu doar angajamentul nostru față de calitate, ci și față de excelență în procesul de producție.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- button arrows -->
+                <div class="arrows">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <!-- thumbnail -->
+                <div class="thumbnail">
+                    <div class="item active">
+                        <img src="images/img1.png">
+                        <div class="content">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img2.png">
+                        <div class="content">
+                           
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img3.png">
+                        <div class="content">
+                           
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img4.png">
+                        <div class="content">
+                           
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img2.png">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <div id="titlu-and-border-section-colaj-img" class="titlu-and-border">
+            <h1 class="titlu-sectiune-sau-pagina">Produsele noastre</h1>
+            <div class="border"></div>
+            <div class="border-2"></div>
+
+        </div>
+
+        <p class="p-despre" id="sectiune-poduse-efruct"> Comandă online direct de la producător ⚜️EFruct Moldova⚜️
+            sau sună  <a href="tel:0602 32 777">060232777</a> ( viber, whatsapp)</p>
+            <div class="sectiune-produse-div">
+                <a href="./pages/pagina-produselor-total.html"><button class="button-produse">Produse</button></a>
+        <div class="container-despre">
+            
+
+        </div>
+
+            
+           
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+        </section>
+
+        <section class="sectiune-recenzii">
+
+            <div class="grup-carduri-recenzii">
+                <div class="interior-recenzii">
+                    <h1 class="titlu-sectiune-sau-pagina">Recenzii</h1>
+                    <div class="border"></div>
+                    <div class="border-2"></div>
+
+                    <div class="row">
+                        <div data-aos="zoom-in" class="col">
+                            <div class="card-recenzii">
+                                <img src="images/p1.jpg" alt="">
+                                <div class="name">Mariana Soiu</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                                <p>
+                                    Ce bune sunt...Eu le folosesc în iaurt,prăjituri,în stare naturală,etc.Le recomand.
+                                </p>
+                                <br></br><br></br><br>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in" class="col">
+                            <div class="card-recenzii">
+                                <img src="images/p2.jpg" alt="">
+                                <div class="name">Svetlana Antocel</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                                <p>
+                                    Buna! Va multumesc pentru fructele D- stre, cu adevarat sunt foarte gustoase si comanda a venit super rapid. O zi buna Va doresc si spor in toate!!!!!!
+                                <br><br><br></p>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in" class="col">
+                            <div class="card-recenzii">
+                                <img src="images/p3.jpg" alt="">
+                                <div class="name">Natalia Plesca Dragancea</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                                <p>
+Foarte bunute toate produsele. Si cipsurile sunt foarte bune 🙂
+                                </p><br><br><br><br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sectiune-faq">
+            <h1 class="titlu-sectiune-sau-pagina">Întrebări frecvente</h1>
+            <div class="border"></div>
+            <div class="border-2"></div>
+
+            <div class="container-intrebare-faq">
+                <div class="intrebare-faq">
+                    <button>
+                        <span>Ce tipuri de fructe uscate oferiți?</span>
+                        <i class="fas fa-chevron-down d-arrow"></i>
+                    </button>
+                    <p> Oferim o gamă largă de fructe uscate naturale, printre care se numără mere, pere, prune, caise și multe altele.</p>
+                </div>
+
+                <div class="intrebare-faq">
+                    <button>
+                        <span>De unde provin fructele pe care le folosiți pentru produsele dumneavoastră?</span>
+                        <i class="fas fa-chevron-down d-arrow"></i>
+                    </button>
+                    <p>Folosim fructe locale din Moldova, culese proaspete din livezi și grădini locale.</p>
+                </div>
+
+                <div class="intrebare-faq">
+                    <button>
+                        <span>Aveți produse organice sau certificate ecologic?</span>
+                        <i class="fas fa-chevron-down d-arrow"></i>
+                    </button>
+                    <p>Da, avem opțiuni organice și certificate ecologic pentru clienții care caută produse naturale și sustenabile.</p>
+                </div>
+
+                <div class="intrebare-faq">
+                    <button>
+                        <span>Care este procesul de uscare al fructelor?</span>
+                        <i class="fas fa-chevron-down d-arrow"></i>
+                    </button>
+                    <p>Fructele sunt uscate cu grijă la temperaturi scăzute pentru a păstra cât mai mult din nutrienții și aroma lor naturală.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="border"></div>
+        <div class="border-2"></div>
+        <span>
+
+            <a href="https://www.instagram.com/efructmoldova/?hl=en"><img class="retele"
+                    src="images/inst.logo.png"></a>
+
+            <a href="https://www.facebook.com/efructmoldova"><img class="retele" src="images/facebook.logo.png"></a>
+
+            <a href="tel:0602 32 777"><img class="retele" src="images/viber.logo.png"></a>
+
+            <p>EFruct Moldova - Chișinău © 2024 Toate drepturile rezervate.</p>
+
+
+        </span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/script-index.js"></script>
+</body>
+
+</html>
